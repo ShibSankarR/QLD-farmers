@@ -1,0 +1,452 @@
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.common-space {
+  padding-top: 80px;
+}
+$brown: #aa8163;
+$green: #82a43a;
+
+button:focus{
+  outline: none;
+}
+
+
+
+/*===== Main Style =====*/
+
+
+/*===== Header =====*/
+
+.top-header{
+  padding: 15px 0;
+  background: #eaeaea;
+  ul{
+    padding: 0;
+    margin: 0;
+    li{
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 300;
+      margin-left: 20px;
+      line-height: 24px;
+      position: relative;
+      &::after{
+        position: absolute;
+        content: "|";
+        font-size: 14px;
+        top: 0;
+        right: -15px;
+      }
+      &:last-child::after{
+        display: none;
+      }
+    }
+    a{
+      color: $brown;
+      text-decoration: underline;
+      margin-left: 20px;
+    }
+  }
+}
+.header{
+  background: #fdf9f6;
+  .main-header{
+    width: 100%;
+    .navbar-nav {
+      margin-left: auto;
+      li{
+        a{
+          color: #000;
+          font-size: 15px;
+          line-height: 24px;
+          font-weight: 300;
+          padding: 10px 15px;
+          position: relative;
+          &::after{
+            position: absolute;
+            content: "";
+            background: $brown;
+            width: 80%;
+            height: 1px;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            display: none;
+            margin: 0 auto;
+          }
+          &:hover::after{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+.other-options {
+  margin-left: 15px;
+  position: relative;
+  &::after{
+    position: absolute;
+    content: "|";
+    font-size: 15px;
+    top: 2px;
+    left: -10px;
+  }
+  ul{
+    padding: 0;
+    margin: 0;
+    li{
+      display: inline-block;
+      a{
+          color: #000;
+          font-size: 15px;
+          line-height: 24px;
+          font-weight: 300;
+          padding: 10px 15px;
+          position: relative;
+          &:hover{
+            text-decoration: none;
+          }
+          .cart-count{
+            position: absolute;
+            background: $green;
+            width: 24px;
+            height: 24px;
+            text-align: center;
+            color: #fff;
+            padding: 1px;
+            border-radius: 50%;
+            font-size: 12px;
+            top: 0;
+            right: 0;
+          }
+      }
+    }
+  }
+}
+
+/*===== Banner =====*/
+
+.banner {
+  position: relative;
+  background: #fdf9f6;
+  .banner-slider {
+    z-index: 99;
+  }
+  .owl-item.active {
+      h1{
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: fadeInDown; 
+      }
+      h2{
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: fadeInLeft; 
+      }
+      p{
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: zoomIn; 
+      }
+      .page-btn, .page-btn2 {
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: fadeInUp;
+      }
+      .banner-image{
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: fadeInRight;
+      }
+  }
+  .banner-overlay{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 9;
+    img{
+      width: 100%;
+    }
+  }
+  .banner-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 40px 0;
+    h1{
+      font-size: 64px;
+      font-weight: 600;
+      line-height: 59pt;
+      margin-bottom: 40px;
+      position: relative;
+      color: #333;
+      &::after {
+        content: "";
+        width: 68px;
+        height: 7px;
+        background: $green;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+    h2{
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 36pt;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    p{
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 50px;
+      color: #767676;
+    }
+  }
+  
+  .banner-image{
+    padding: 40px 0;
+  }
+}
+.page-btn{
+  margin-right: 10px;
+  a{
+    padding: 12px 36px;
+    background: $brown;
+    border: 1px solid $brown;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: inline-block;
+    &:hover{
+      background: #fff;
+      border: 1px solid #333333;
+      color: #333333;
+    }
+  }
+}
+.page-btn2{
+  margin-right: 10px;
+  a{
+    padding: 12px 36px;
+    background: #fff;
+    border: 1px solid #333333;
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: inline-block;
+    &:hover{
+      background: $brown;
+      border: 1px solid $brown;
+        color: #fff;
+    }
+  }
+}
+/*===== About Us =====*/
+
+.about-img {
+  img{
+    width: 100%;
+  }
+}
+.about-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0 40px;
+    h1 {
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 35pt;
+      margin-bottom: 30px;
+      text-align: left;
+      color: #333;
+      padding: 0 50px 0 0px;
+      span{
+        width: 100%;
+        color: #767676;
+        font-style: italic;
+        font-size: 18px;
+      }
+    }
+    h3{
+      color: #333;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    p{
+      font-size: 15px;
+      color: #767676;
+      margin-bottom: 20px;
+      padding: 0 40px 0 0;
+      span{
+        color: $brown;
+      }
+    }
+    .page-btn{
+      margin-top: 30px;
+      }
+}
+
+/*====== Products Slider ======*/
+
+
+.page-btn3{
+  margin: 50px 0 0;
+  a{
+    padding: 12px 36px;
+    background: #fff;
+    border: 1px solid $brown;
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: inline-block;
+    &:hover{
+      background: $brown;
+      border: 1px solid $brown;
+      color: #fff;
+    }
+  }
+}
+
+.product-box {
+  img {
+    width: 100%;
+  }
+}
+.page-title {
+  margin-bottom: 40px;
+  h1{
+    font-size: 46px;
+    color: #333;
+    line-height: 80px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    position: relative;
+    &::after {
+      content: "";
+      width: 68px;
+      height: 7px;
+      background: $green;
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+}
+
+.product-box{
+  background: #fff;
+  padding: 50px 20px;
+  overflow: hidden;
+  &:hover{
+    background: #fdf9f6;
+  }
+  h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  p {
+    color: #767676;
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+}
+
+
+/*===== News &Updates =====*/
+
+.news{
+  .page-title {
+      h1{
+        &::after {
+          display: none;
+        }
+      }
+  }
+}
+
+.news-updates{
+  ul{
+    padding: 0;
+    margin: 0;
+    li{
+      display: inline-block;
+      margin-right: 31px;
+      width: 46%;
+      overflow: hidden;
+      padding-bottom: 30px;
+      
+    }
+  }
+}
+.news-box {
+  img{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  p {
+    color: #767676;
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    padding: 0 48px 0 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "./responsive.scss";

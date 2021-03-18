@@ -1,0 +1,519 @@
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400; }
+
+.common-space {
+  padding-top: 80px; }
+
+button:focus {
+  outline: none; }
+
+/*===== Main Style =====*/
+/*===== Header =====*/
+.top-header {
+  padding: 15px 0;
+  background: #eaeaea; }
+  .top-header ul {
+    padding: 0;
+    margin: 0; }
+    .top-header ul li {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 300;
+      margin-left: 20px;
+      line-height: 24px;
+      position: relative; }
+      .top-header ul li::after {
+        position: absolute;
+        content: "|";
+        font-size: 14px;
+        top: 0;
+        right: -15px; }
+      .top-header ul li:last-child::after {
+        display: none; }
+    .top-header ul a {
+      color: #aa8163;
+      text-decoration: underline;
+      margin-left: 20px; }
+
+.header {
+  background: #fdf9f6; }
+  .header .main-header {
+    width: 100%; }
+    .header .main-header .navbar-nav {
+      margin-left: auto; }
+      .header .main-header .navbar-nav li a {
+        color: #000;
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 300;
+        padding: 10px 15px;
+        position: relative; }
+        .header .main-header .navbar-nav li a::after {
+          position: absolute;
+          content: "";
+          background: #aa8163;
+          width: 80%;
+          height: 1px;
+          bottom: 10px;
+          left: 0;
+          right: 0;
+          display: none;
+          margin: 0 auto; }
+        .header .main-header .navbar-nav li a:hover::after {
+          display: block; }
+
+.other-options {
+  margin-left: 15px;
+  position: relative; }
+  .other-options::after {
+    position: absolute;
+    content: "|";
+    font-size: 15px;
+    top: 2px;
+    left: -10px; }
+  .other-options ul {
+    padding: 0;
+    margin: 0; }
+    .other-options ul li {
+      display: inline-block; }
+      .other-options ul li a {
+        color: #000;
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 300;
+        padding: 10px 15px;
+        position: relative; }
+        .other-options ul li a:hover {
+          text-decoration: none; }
+        .other-options ul li a .cart-count {
+          position: absolute;
+          background: #82a43a;
+          width: 24px;
+          height: 24px;
+          text-align: center;
+          color: #fff;
+          padding: 1px;
+          border-radius: 50%;
+          font-size: 12px;
+          top: 0;
+          right: 0; }
+
+/*===== Banner =====*/
+.banner {
+  position: relative;
+  background: #fdf9f6; }
+  .banner .banner-slider {
+    z-index: 99; }
+  .banner .owl-item.active h1 {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: fadeInDown; }
+  .banner .owl-item.active h2 {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: fadeInLeft; }
+  .banner .owl-item.active p {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: zoomIn; }
+  .banner .owl-item.active .page-btn, .banner .owl-item.active .page-btn2 {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: fadeInUp; }
+  .banner .owl-item.active .banner-image {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: fadeInRight; }
+  .banner .banner-overlay {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 9; }
+    .banner .banner-overlay img {
+      width: 100%; }
+  .banner .banner-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 40px 0; }
+    .banner .banner-text h1 {
+      font-size: 64px;
+      font-weight: 600;
+      line-height: 59pt;
+      margin-bottom: 40px;
+      position: relative;
+      color: #333; }
+      .banner .banner-text h1::after {
+        content: "";
+        width: 68px;
+        height: 7px;
+        background: #82a43a;
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+    .banner .banner-text h2 {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 36pt;
+      margin-bottom: 20px;
+      color: #333; }
+    .banner .banner-text p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 50px;
+      color: #767676; }
+  .banner .banner-image {
+    padding: 40px 0; }
+
+.page-btn {
+  margin-right: 10px; }
+  .page-btn a {
+    padding: 12px 36px;
+    background: #aa8163;
+    border: 1px solid #aa8163;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: inline-block; }
+    .page-btn a:hover {
+      background: #fff;
+      border: 1px solid #333333;
+      color: #333333; }
+
+.page-btn2 {
+  margin-right: 10px; }
+  .page-btn2 a {
+    padding: 12px 36px;
+    background: #fff;
+    border: 1px solid #333333;
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: inline-block; }
+    .page-btn2 a:hover {
+      background: #aa8163;
+      border: 1px solid #aa8163;
+      color: #fff; }
+
+/*===== About Us =====*/
+.about-img img {
+  width: 100%; }
+
+.about-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 0 40px; }
+  .about-text h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 35pt;
+    margin-bottom: 30px;
+    text-align: left;
+    color: #333;
+    padding: 0 50px 0 0px; }
+    .about-text h1 span {
+      width: 100%;
+      color: #767676;
+      font-style: italic;
+      font-size: 18px; }
+  .about-text h3 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px; }
+  .about-text p {
+    font-size: 15px;
+    color: #767676;
+    margin-bottom: 20px;
+    padding: 0 40px 0 0; }
+    .about-text p span {
+      color: #aa8163; }
+  .about-text .page-btn {
+    margin-top: 30px; }
+
+/*====== Products Slider ======*/
+.page-btn3 {
+  margin: 50px 0 0; }
+  .page-btn3 a {
+    padding: 12px 36px;
+    background: #fff;
+    border: 1px solid #aa8163;
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: inline-block; }
+    .page-btn3 a:hover {
+      background: #aa8163;
+      border: 1px solid #aa8163;
+      color: #fff; }
+
+.product-box img {
+  width: 100%; }
+
+.page-title {
+  margin-bottom: 40px; }
+  .page-title h1 {
+    font-size: 46px;
+    color: #333;
+    line-height: 80px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    position: relative; }
+    .page-title h1::after {
+      content: "";
+      width: 68px;
+      height: 7px;
+      background: #82a43a;
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      right: 0;
+      margin: 0 auto; }
+
+.product-box {
+  background: #fff;
+  padding: 50px 20px;
+  overflow: hidden; }
+  .product-box:hover {
+    background: #fdf9f6; }
+  .product-box h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600; }
+  .product-box p {
+    color: #767676;
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 400; }
+
+/*===== News &Updates =====*/
+.news .page-title h1::after {
+  display: none; }
+
+.news-updates ul {
+  padding: 0;
+  margin: 0; }
+  .news-updates ul li {
+    display: inline-block;
+    margin-right: 31px;
+    width: 46%;
+    overflow: hidden;
+    padding-bottom: 30px; }
+
+.news-box img {
+  width: 100%;
+  margin-bottom: 10px; }
+.news-box h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 600; }
+.news-box p {
+  color: #767676;
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  padding: 0 48px 0 0; }
+
+@media only screen and (max-width: 767px) {
+  .top-header {
+    padding: 15px 0;
+    background: #eaeaea; }
+    .top-header ul {
+      padding: 0;
+      margin: 0; }
+      .top-header ul li {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 300;
+        margin-left: 0px;
+        line-height: 16px;
+        position: relative; }
+        .top-header ul li::after {
+          position: absolute;
+          content: "|";
+          font-size: 14px;
+          top: 0;
+          right: -15px; }
+        .top-header ul li:last-child::after {
+          display: none; }
+      .top-header ul a {
+        color: #aa8163;
+        text-decoration: underline;
+        margin-left: 20px; }
+
+  .header {
+    background: #fdf9f6;
+    position: relative; }
+    .header .main-header {
+      width: 100%; }
+      .header .main-header .navbar-nav {
+        margin-left: auto;
+        background: #aa8163;
+        margin-bottom: 20px; }
+        .header .main-header .navbar-nav li:hover {
+          background: #fdf9f6; }
+        .header .main-header .navbar-nav li a {
+          color: #fff;
+          font-size: 15px;
+          line-height: 24px;
+          font-weight: 300;
+          padding: 10px 15px;
+          position: relative; }
+          .header .main-header .navbar-nav li a:hover {
+            color: #000; }
+          .header .main-header .navbar-nav li a::after {
+            position: absolute;
+            content: "";
+            background: #aa8163;
+            width: 100%;
+            height: 1px;
+            bottom: 10px;
+            left: 0;
+            right: auto;
+            display: none;
+            margin: 0 auto; }
+          .header .main-header .navbar-nav li a:hover::after {
+            display: block; }
+
+  a.navbar-brand.logo {
+    display: block;
+    width: 100%; }
+
+  .other-options {
+    text-align: center; }
+    .other-options::after {
+      display: none; }
+
+  .navbar-toggler {
+    position: absolute;
+    top: 20%;
+    right: 8%; }
+    .navbar-toggler .navbar-toggler-icon i {
+      font-size: 32px; }
+
+  .banner .banner-text {
+    padding: 40px; }
+    .banner .banner-text h1 {
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 36pt;
+      margin-bottom: 40px;
+      position: relative;
+      color: #333; }
+      .banner .banner-text h1::after {
+        content: "";
+        width: 68px;
+        height: 7px;
+        background: #82a43a;
+        position: absolute;
+        bottom: -20px;
+        left: 0; }
+    .banner .banner-text h2 {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 36pt;
+      margin-bottom: 20px;
+      color: #333;
+      text-align: center; }
+    .banner .banner-text p {
+      font-size: 10px;
+      margin-bottom: 20px; }
+
+  .page-btn, .page-btn2, .page-btn3 {
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    display: block; }
+    .page-btn a, .page-btn2 a, .page-btn3 a {
+      display: block; }
+
+  .about-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0 40px; }
+    .about-text h1 {
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 30pt;
+      margin-bottom: 30px;
+      text-align: left;
+      color: #333;
+      padding: 0 0px 0 0px; }
+      .about-text h1 span {
+        width: 100%;
+        color: #767676;
+        font-style: italic;
+        font-size: 15px; }
+    .about-text h3 {
+      color: #333;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 20px; }
+    .about-text p {
+      font-size: 12px;
+      color: #767676;
+      margin-bottom: 20px;
+      padding: 0 40px 0 0; }
+      .about-text p span {
+        color: #aa8163; }
+    .about-text .page-btn {
+      margin-top: 30px; }
+
+  .page-title {
+    margin-bottom: 40px; }
+    .page-title h1 {
+      font-size: 36px;
+      color: #333;
+      line-height: 80px;
+      margin-bottom: 20px;
+      font-weight: 600;
+      position: relative; }
+      .page-title h1::after {
+        content: "";
+        width: 68px;
+        height: 7px;
+        background: #82a43a;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto; }
+
+  .news-updates ul {
+    padding: 0;
+    margin: 0; }
+    .news-updates ul li {
+      display: inline-block;
+      margin-right: 31px;
+      width: 100%;
+      overflow: hidden;
+      padding-bottom: 30px; } }

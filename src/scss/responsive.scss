@@ -1,0 +1,235 @@
+@media only screen and (max-width: 767px) {
+
+    .top-header{
+        padding: 15px 0;
+        background: #eaeaea;
+        ul{
+          padding: 0;
+          margin: 0;
+          li{
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 300;
+            margin-left: 0px;
+            line-height: 16px;
+            position: relative;
+            &::after{
+              position: absolute;
+              content: "|";
+              font-size: 14px;
+              top: 0;
+              right: -15px;
+            }
+            &:last-child::after{
+              display: none;
+            }
+          }
+          a{
+            color: $brown;
+            text-decoration: underline;
+            margin-left: 20px;
+          }
+        }
+      }
+      .header{
+        background: #fdf9f6;
+        position: relative;
+        .main-header{
+          width: 100%;
+          .navbar-nav {
+            margin-left: auto;
+            background: $brown;
+            margin-bottom: 20px;
+            li{
+            &:hover{
+                background: #fdf9f6;
+            }    
+              a{
+                color: #fff;
+                font-size: 15px;
+                line-height: 24px;
+                font-weight: 300;
+                padding: 10px 15px;
+                position: relative;
+                &:hover{
+                    color: #000;
+                }
+                &::after{
+                  position: absolute;
+                  content: "";
+                  background: $brown;
+                  width: 100%;
+                  height: 1px;
+                  bottom: 10px;
+                  left: 0;
+                  right: auto;
+                  display: none;
+                  margin: 0 auto;
+                }
+                &:hover::after{
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+      a.navbar-brand.logo {
+        display: block;
+        width: 100%;
+    }
+
+    .other-options {
+        text-align: center;
+        &::after{
+        display: none;        
+    }
+    }
+.navbar-toggler{
+    position: absolute;
+    top: 20%;
+    right: 8%;
+    .navbar-toggler-icon{
+        i{
+            font-size: 32px;
+        }
+    }
+}
+.banner {
+    .banner-text{
+        padding: 40px;
+        h1 {
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 36pt;
+            margin-bottom: 40px;
+            position: relative;
+            color: #333;
+            &::after {
+                content: "";
+                width: 68px;
+                height: 7px;
+                background: #82a43a;
+                position: absolute;
+                bottom: -20px;
+                left: 0;
+              }
+        }
+        h2{
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 36pt;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+          }
+        p{
+            font-size: 10px;
+            margin-bottom: 20px;
+          }  
+    }
+} 
+
+.page-btn, .page-btn2, .page-btn3{
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    a{
+        display: block;
+    }
+  }
+  .about-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0 40px;
+    h1 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 30pt;
+        margin-bottom: 30px;
+        text-align: left;
+        color: #333;
+        padding: 0 0px 0 0px;
+      span{
+        width: 100%;
+        color: #767676;
+        font-style: italic;
+        font-size: 15px;
+      }
+    }
+    h3{
+      color: #333;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    p{
+      font-size: 12px;
+      color: #767676;
+      margin-bottom: 20px;
+      padding: 0 40px 0 0;
+      span{
+        color: $brown;
+      }
+    }
+    .page-btn{
+      margin-top: 30px;
+      }
+}
+
+.page-title {
+    margin-bottom: 40px;
+    h1{
+      font-size: 36px;
+      color: #333;
+      line-height: 80px;
+      margin-bottom: 20px;
+      font-weight: 600;
+      position: relative;
+      &::after {
+        content: "";
+        width: 68px;
+        height: 7px;
+        background: $green;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+    }
+  }
+  .news-updates{
+    ul{
+      padding: 0;
+      margin: 0;
+      li{
+        display: inline-block;
+        margin-right: 31px;
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 30px;
+        
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
